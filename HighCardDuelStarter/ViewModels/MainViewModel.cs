@@ -21,6 +21,10 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     public string player2Card = "-";
 
+    //Hubiera usado las propiedades declaradas para usarlas en relay commands que le asignaran a las variables playercard su carta correspondiente
+    //proveniente del randomcard dealer usando la lista suits y la lista ranks.
+    // para usar esas listas inyectar lo que contiene la clase RandomCardealer en una propiedad con nombre por ejemplo repo
+    // en el ui usar bindings hacia las variables del nombre, y los command que inicien el juego
     public MainViewModel(ICardDealer cartas)
     {
         Cartas = cartas;

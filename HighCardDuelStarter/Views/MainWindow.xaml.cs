@@ -11,7 +11,6 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
-        RandomCardDealer cartas = new RandomCardDealer();
-        DataContext = new MainViewModel(cartas);    
+        DataContext = MainViewModel; 
     }
 }
